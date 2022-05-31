@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+body{
+    overflow-x: hidden;
+}
+.container-fluid {
+    background-color: #ECE8D9;
+    border: #ECE8D9;
+}
+
+nav{
+    position: sticky;
+    z-index: 99;
+    top: 0;
+}
+
+#set{
+    background-color: #ECE8D9;
+}
+
+#fm{
+    width: 600px;
+    height: 80px;
+}
+
+button, a, href {
+    text-decoration: none;
+}
+
+div h1{
+    font-size: 70px;
+    font-family: "dm serif display",serif;
+    color: #384a62;
+}
+
+#sam{
+    font-family: SF Pro,sans-serif;
+    font-weight: 600;
+}
+
+#mg {
+    transform: translateX(-50px);
+}
+
+#cardpix{
+    margin: 100px 0 0 225px;
+    transform: translateY(30px);
+}
+
+footer{
+    font-family:serif display ,serif;
+    background-color: #f7f6f4;
+    margin-top: 30px;
+}
+
+#nav{
+    position: fixed;
+    top: 0;
+}
+
+#jh{
+    background-color: #ECE8D9;
+}
+
+#need{
+    border: #384A62;
+    padding: 10px;
+    margin: 5px 0px 5px -135px;
+    width: 130px;
+    color: white;
+    border-radius: 2px;
+    z-index: 99;
+    background-color: #384A62;
+}
+
+#pt{
+    background: #edf6fd;
+}
+
+#paul{
+    border: 0.97235px solid rgb(236, 232, 217);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.btn{
+    background-color: #D77F81;
+}
+
+#sub{
+    background-color: #F7279E;
+    border-top-left-radius: 5px;
+    transform: translateX(5px);
+    border: #F7279E;
+    color: #eeee;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+}
+
+@media (max-width: 425px){
+    #search .input-con button {
+        right: 15px;
+    }
+}
