@@ -1,10 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 body{
     overflow-x: hidden;
 }
 .container-fluid {
-    background-color: #ECE8D9;
-    border: #ECE8D9;
+    background-color: #ece8d9;
+    border: #ece8d9;
+}
+
+#con{
+    font-family: "SF Pro", sans-serif;
+    font-size: 13.5px;
+    font-weight: 600;
+    line-height: 19.35px;
+}
+
+#men{
+    display: none;
+}
+
+#pp{
+    margin-top: -50px;
+}
+
+#pop{
+    font-family: "dm serif display";
+    font-size: 30px;
+    font-weight: 400;
+    color: #384A62;
+}
+
+#rid{
+    font-family: "SF Pro",sans-serif;
+    color: #506683;
 }
 
 nav{
@@ -13,8 +46,21 @@ nav{
     top: 0;
 }
 
+.nav-item{
+    font-family: "SF Pro", sans-serif;
+    line-height: 21.75px;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: #384A62;
+}
+
 #set{
     background-color: #ECE8D9;
+}
+
+#dm{
+    background-color: #f7f6f4;
+    font-family: "dm serif display",serif;
 }
 
 #fm{
@@ -22,28 +68,71 @@ nav{
     height: 80px;
 }
 
-button, a, href {
-    text-decoration: none;
+.card-img-top{
+    transition: scale .2s;
 }
 
-div h1{
-    font-size: 70px;
+.card-img-top:hover {
+    transform: scale(1.02, 1.02);
+}
+
+label.form-label{
+    font-family: "SF Pro", sans-serif;
+    color: #384a62;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.card-title{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+    font-family: "SF Pro", sans-serif;
+    color: #384A62;
+}
+
+#start{
+    font-family: "SF Pro", sans-serif;
+    color: #384a62;
+    font-size: 12.8px;
+    font-weight: 700;
+    letter-spacing: 0.64px;
+}
+
+#text{
+    font-family: "SF Pro", sans-serif;
+    color: #384a62;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.64px;
+}
+
+#pl{
+    font-size: 67.2px;
+    line-height: 40px;
+    font-weight: 400;
     font-family: "dm serif display",serif;
     color: #384a62;
+
 }
 
 #sam{
     font-family: SF Pro,sans-serif;
-    font-weight: 600;
+    font-weight: 540;
+    font-size: 24px;
+    line-height: 32px;
+    color: #384a62;
 }
 
 #mg {
-    transform: translateX(-50px);
+    transform: translateX(-50px) translateY(20px);
+    
 }
 
 #cardpix{
     margin: 100px 0 0 225px;
-    transform: translateY(30px);
+    transform: translateY(45px);
 }
 
 footer{
@@ -58,7 +147,7 @@ footer{
 }
 
 #jh{
-    background-color: #ECE8D9;
+    background-color: #ece8d9;;
 }
 
 #need{
@@ -68,12 +157,13 @@ footer{
     width: 130px;
     color: white;
     border-radius: 2px;
-    z-index: 99;
     background-color: #384A62;
+    z-index: 1;
 }
 
 #pt{
     background: #edf6fd;
+    /* padding: 100px; */
 }
 
 #paul{
@@ -95,14 +185,166 @@ footer{
     transform: translateX(5px);
     border: #F7279E;
     color: #eeee;
-    height: 50px;
+    padding: 10px;
     position: fixed;
     bottom: 0;
     z-index: 99;
 }
 
-@media (max-width: 425px){
-    #search .input-con button {
-        right: 15px;
+#gd{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: inherit;
+    gap: 10px 20px;
+    margin: 10px;
+}
+
+.card img{
+    
+}
+
+#foot{
+    background-color: #ECE8D9;
+}
+
+#nut{
+    color: #D77F81;
+}
+
+#tp{
+    padding: 10px;
+}
+
+#ground{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*...................... for big phone .......................*/
+
+@media only screen and (max-width: 900px){
+    #step{
+        display: none;
+        padding: 4px;
+        margin-left: -15px;
+        padding-bottom: 20px;
     }
+
+    #one{
+        display: none;
+    }
+
+    #two{
+        margin-right: 80px;
+        height: 30px;
+    }
+    #three{
+        border: solid rgb(224, 224, 224);
+        height: 30px;
+        width: 100px;
+        font-size: small;
+        margin-left: -50px;
+    }
+
+    #men{
+        display: inline-flex;
+    }
+
+    #fm{
+    width: 600px;
+    height: 80px;
+    }
+
+    #pl{
+    font-size: 50px;
+    font-family: "dm serif display",serif;
+    color: #384a62;
+
+    }
+
+    #sam{
+    font-family: SF Pro,sans-serif;
+    font-weight: 200px;
+    }
+
+    #mg {
+    transform: translateX(-50px) ;
+    }
+
+    #cardpix{
+    display: none;
+    }
+
+    #gd{
+        grid-template-columns: 1fr 1fr;
+    } 
+
+    #fom{
+        width: 280px;
+    }
+}
+
+/*...................... for small phone .......................*/
+
+@media only screen and (max-width: 390px){
+    #step{
+        display: none;
+    }
+
+    #two{
+        margin-right: 80px;
+        height: 30px;
+    }
+    #three{
+        border: solid rgb(224, 224, 224);
+        height: 30px;
+        width: 100px;
+        font-size: small;
+        margin-left: -50px;
+    }
+
+    #men{
+        display: inline-flex;
+    }
+
+    #fm{
+    width: 600px;
+    height: 80px;
+    }
+
+    #pl{
+    font-size: 50px;
+    font-family: "dm serif display",serif;
+    color: #384a62;
+
+    }
+
+    #sam{
+    font-family: SF Pro,sans-serif;
+    font-weight: 200px;
+    }
+
+    #mg {
+    transform: translateX(-50px) ;
+    }
+
+    #cardpix{
+    display: none;
+    }
+
+    #fom{
+        width: 280px;
+    }
+
+    #tp{
+        padding: 10px;
+    }
+
+    #need{
+        transform: translateY(80px);
+    }
+
+    #gd{
+            grid-template-columns: 1fr;
+        }
 }
