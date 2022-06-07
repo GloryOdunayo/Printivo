@@ -191,16 +191,12 @@ footer{
     z-index: 99;
 }
 
-#gd{
+.gd{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row: inherit;
-    gap: 10px 20px;
-    margin: 10px;
-}
-
-.card img{
-    
+    gap: 10px 10px;
+    margin: 50px;
 }
 
 #foot{
