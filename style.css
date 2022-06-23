@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 *{
-    margin: 0;
-    padding: 0;
+   margin: 0;
+   padding: 0; 
 }
 
 body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 .container-fluid {
     background-color: #ece8d9;
@@ -130,14 +130,14 @@ label.form-label{
 }
 
 #cardpix{
-    margin: 100px 0 0 225px;
+    margin: 100px 0 0 305px;
     transform: translateY(45px);
 }
 
 footer{
     font-family:serif display ,serif;
     background-color: #f7f6f4;
-    margin-top: 30px;
+    display: flex;
 }
 
 #nav{
@@ -146,7 +146,7 @@ footer{
 }
 
 #jh{
-    background-color: #ece8d9;;
+    background-color: #ece8d9;
 }
 
 #need{
@@ -208,12 +208,22 @@ footer{
 
 #tp{
     padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px;
 }
 
 /*...................... for big phone .......................*/
 
 @media only screen and (max-width: 900px){
     #step{
+        display: none;
+        padding: 4px;
+        margin-left: -15px;
+        padding-bottom: 20px;
+    }
+
+    #step2{
         display: none;
         padding: 4px;
         margin-left: -15px;
@@ -258,11 +268,15 @@ footer{
     }
 
     #mg {
-    transform: translateX(-50px) ;
+        margin: 30px 0 5px 10px;
     }
 
     #cardpix{
     display: none;
+    }
+
+    #pix{
+        width: 500px;
     }
 
     #gd{
@@ -272,12 +286,21 @@ footer{
     #fom{
         width: 280px;
     }
+    #tp{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px;
+    }
 }
 
 /*...................... for small phone .......................*/
 
 @media only screen and (max-width: 390px){
     #step{
+        display: none;
+    }
+    #step2{
         display: none;
     }
 
@@ -328,6 +351,9 @@ footer{
 
     #tp{
         padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10px;
     }
 
     #need{
@@ -336,5 +362,18 @@ footer{
 
     #gd{
             grid-template-columns: 1fr;
+            row-gap: 50px;
         }
+
+    #pix{
+        width: 300px;
+    }
+
+    footer{
+        display: block;
+    }
+
+    #tp{
+        display: block;
+    }
 }
